@@ -1,0 +1,64 @@
+<body>
+    <div class="navbar">
+        <img style="width: 150px; height: 90px;justify-content: center; " src="./assets/images/logo.png" alt="Logo">
+
+        <h2 style="margin:30px; margin-left: 480px; ">Welcome Admin</h2>
+
+        <button class="regid" (click)="show1()" class="btn btn-info"
+            style="margin:20px; margin-left: 480px; height: 50px; width: 120px;font-size: 20px;  ">Logout</button>
+        </div>
+        <div style="margin-left: 460px;display: flex;">
+
+            <div> <button type="button" class="btn btn-info" style=" margin: 10px;border-radius:15px;font-size:20px;"
+                    (click)="show3()">
+                    Back</button></div>
+            <div style=" margin-left: 400px;"> <button type="button" class="btn btn-info"
+                    style=" margin: 10px;border-radius:15px;font-size:20px;" (click)="show2()">
+                    Add Employee </button></div>
+        </div>
+
+        <div class="main-content">
+            <div class="section-content section-content-p30">
+                <div class="container-fluid">
+                    <!-- <a routerLink="/empform" >Add new Employee</a> -->
+                    <table class='table table-bordered'>
+                        <thead>
+                            <tr class='table-dark'>
+                                <th>ID</th>
+                                <th>FirstName</th>
+                                <th>LastName</th>
+                                <th>Email</th>
+                                <th>Password</th>
+                                <th>Contact</th>
+                                <th>Address</th>
+                                <th>UserType</th>
+                                <th>Update/Delete</th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let user of user">
+                                <td>{{user.id}}</td>
+                                <td>{{user.fname}}</td>
+                                <td>{{user.lname}}</td>
+                                <td>{{user.Email}}</td>
+                                <td>{{user.Password}}</td>
+                                <td>{{user.phnum}}</td>
+                                <td>{{user.address}}</td>
+                                <td>{{user.Usertype}}</td>
+                                <td>
+                                    <button type="button" class="btn btn-info" (click)="updateUser(user.id)">
+                                        update
+                                    </button>
+                                    &nbsp;&nbsp;
+                                    <button type="button" class="btn btn-info" (click)="deleteUser(user.id)">
+                                        Delete
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+</body>

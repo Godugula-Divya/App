@@ -1,0 +1,63 @@
+<div class="main-content">
+    <div class="section-content section-content-p30">
+        <div class="container-fluid">
+
+                <h3>Add New Products</h3>
+                <hr>
+      
+                <form #empform="ngForm" novalidate (ngSubmit)="onSubmit()">
+                    <table border="1" >
+                        <tbody>
+                            <tr>
+                                <td>id:</td><td><input type="text" name="id" [(ngModel)]="products.id"/></td>
+                            </tr>
+                        <tr>
+                        <td>Name:</td><td><input type="text" name="ename" [(ngModel)]="products.name"/></td>
+                    </tr>
+                    <tr><br></tr>
+                    <tr>
+                        <td>image</td><td><input type="text" name="image" [(ngModel)]="products.image"/></td>
+                    </tr>
+                    <tr><br></tr>
+                    <tr>
+                    <tr>
+                            <td>usebefore</td><td><input type="text" name="usebefore" [(ngModel)]="products.usebefore"/></td>
+                        </tr>
+                        <tr><br></tr>
+                        <tr>
+                            <td>quantity</td><td><input type="text" name="quantity" [(ngModel)]="products.quantity"/></td>
+                        </tr>
+                        <tr><br></tr>
+                        <tr>
+                            <td>price</td><td><input type="text" name="price" [(ngModel)]="products.price"/></td>
+                        </tr>
+                        <tr><br></tr>
+                        <tr>
+                            <td>pcatid</td><td><input type="text" name="pcatid" [(ngModel)]="products.pcatid"/></td>
+                        </tr>
+                        <tr><br></tr>
+                        <tr>
+                        <tr>
+                        <tr>
+                        <tr>
+                        <td>Categorys:</td>
+                        <td>
+                            <select name="id" [(ngModel)]="products.id">
+                                <option value="10">healthCare</option>
+                                <option value="20">BabyCare</option>
+                                <option value="30">Syrups</option>
+                                <option value="40">Tablets</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr><br></tr>
+                                    <td><button class="btn btn-info" type="submit">Submit</button></td>
+                   
+                
+                <tr><br></tr>
+                    </tbody>
+                    </table>
+                </form>
+            
+
+            </div></div></div>

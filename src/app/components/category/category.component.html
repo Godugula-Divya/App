@@ -1,0 +1,8 @@
+<div class="category">
+    <div  *ngFor = "let category of categories">
+        <button routerLink="/home/category/{{category.id}}">
+            <img src={{category.image}} alt="Employee Photo" >
+            <h3>{{category.name}}</h3>
+        </button>
+    </div>
+</div>

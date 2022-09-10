@@ -1,0 +1,45 @@
+<div class="list">
+    <ng-container  *ngFor="let product of product">
+  <div class="card">
+      <table style="display: flex;">
+        <tr>
+      <div class="product">
+        <img src={{product.image}} class="card-img-left" alt="Fissure in Sandstone"/>
+        <div class="card-body">
+          <table>
+            <tr>
+                <th>id</th>
+                <td>:  {{product.id}}</td>
+              </tr>
+            <tr>
+              <th>Name</th>
+              <td>:  {{product.name}}</td>
+            </tr>
+            <tr>
+              <th>image</th>
+              <td>:  {{product.image}}</td>
+            </tr>
+            <tr>
+              <th>usebefore</th>
+              <td>:  {{product.usebefore}}</td>
+            </tr>
+            <tr>
+              <th>quantity</th>
+              <td>:  {{product.quantity}}</td>
+            </tr>
+            <tr>
+              <th>Price</th>
+              <td>:  {{product.price}}</td>
+            </tr>
+            
+          </table>
+          <button class="btn btn-primary" type="button" (click)="addtocart(product)" style="font-size: 18px;width: 200px; height: 30px;margin-right:20px;">Add to Cart</button>
+        </div>
+      </div>
+    </tr>
+    </table>
+  </div>
+  </ng-container>
+    </div>
+    
+  

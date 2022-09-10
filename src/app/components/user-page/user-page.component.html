@@ -1,0 +1,39 @@
+<body>
+    <nav class="navbar">
+        <div style="display: flex;">
+            <div class="navbar-header">
+                <img style="width: 150px; height: 90px;justify-content: center; " class="navbar-nav navbar-left"
+                    src="./assets/images/logo.png" alt="Logo">
+            </div>
+            <div class="navbar-header" style="cursor: pointer; margin: 15px;padding: 15px ; display: flex;">
+                <a class="navbar-header" (click)="show1()">Home</a>
+                
+            </div>
+            <div>
+                <form class="form-header" #searchform="ngForm" (submit)="search()" method="GET">
+                    <input class="navbar-header" style=" margin: 20px;padding: 15px ;width: 350px; height: 50px; "
+                        type="text" name="search" placeholder="Search for Products ..." [(ngModel)]="searchName" />
+                    <button class="btn btn-success"
+                        style=" margin: 20px; height: 50px; width: 120px;font-size: 20px; align-items: center; justify-content: center;"
+                        type="submit">
+                        Search
+                    </button>
+                </form>
+            </div>
+            <div style="margin-left: 125px;">
+                <button class="btn btn-primary" (click)="show4()" class="btn btn-info"
+                    style="margin: 20px; height: 50px; width: 120px;font-size: 20px; align-items: center; ">View Cart</button>
+    
+                <button class="btn btn-primary" id="regid" (click)="show5()" class="btn btn-info"
+                    style="margin: 20px;height: 50px; width: 120px; font-size:20px; align-items: center; ">Logout</button>
+            </div>
+       
+       </div>
+    </nav>
+    <app-user-category></app-user-category>
+    
+    
+    <br>
+    <app-user-product></app-user-product>
+    
+    </body>

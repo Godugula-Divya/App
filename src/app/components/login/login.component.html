@@ -1,0 +1,18 @@
+<body>
+   <table  class='table table-bordered'>
+    <div class="center">
+       
+    <div class="form">
+       <marquee> <a (click)="show3()" style="cursor: pointer;">New Member? - Please Register</a><br></marquee>
+        <h3 style="color: #2D31FA;">Enter Login details:</h3>
+        <table >
+        <tr><td><label for="text" style="margin: 10px;">Email</label></td><td><input type="text" style="margin-left: 60px;" name="email" [(ngModel)]="user.Email" class="text" placeholder="Enter Email"></td></tr>
+         <tr><td><label for="text" style="margin: 10px;">Password</label></td><td><input type="password"style="margin-left: 60px;" name="pwd" [(ngModel)]="user.Password" id="pass" class="text" placeholder="Enter password"> <span id="error"></span></td>
+            <tr><td><label for="text" style="margin: 10px;">UserType</label></td><td><input type="text" style="margin-left: 60px;" name="usertype" [(ngModel)]="user.Usertype" class="text" placeholder="Admin/User"></td></tr><br>
+           
+          </table>
+    <button class="btn btn-success" type="button" (click)="show2()" [(ngModel)]="user.Usertype" style="font-size: 18px;width: 125px; height: 40px;margin-right:20px;">Login</button>
+    <button class="btn btn-danger" type="button" (click)="show3()"style="font-size: 18px;width: 125px; height: 40px;" data-dismiss="modal">cancel</button>
+    </div>
+    </div>
+   

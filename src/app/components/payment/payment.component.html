@@ -1,0 +1,122 @@
+<body>
+    <div>
+        <div class="form"><br>
+
+            <form #loginform="ngForm">
+                <div>
+                    <h2 style="color: #2D31FA;">Billing details</h2>
+                    <div class="table">
+                        <table class="container">
+                            <tr>
+                                <td><label for="text" style="margin: 10px;">First Name</label></td>
+                                <td><input type="text" name="fname" class="text" placeholder="Enter First Name"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="text" style="margin: 10px;">Last Name</label></td>
+                                <td><input type="text" name="lname" class="text" placeholder="Enter password"> <span
+                                        id="error"></span></td>
+                            <tr>
+                                <td><label for="text" style="margin: 10px;">Door.No</label></td>
+                                <td><input type="text" name="doorno" class="text" placeholder="Enter door no"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="text" style="margin: 10px;">Address line-1</label></td>
+                                <td><input type="text" name="address line-1" class="text"
+                                        placeholder="Enter bulding-name,street"> <span id="error"></span></td>
+                            <tr>
+                                <td><label for="text" style="margin: 10px;">Address line-2</label></td>
+                                <td><input type="text" name="contact" class="text" placeholder="Enter area,city"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="text" style="margin: 10px;">LandMark</label></td>
+                                <td><input type="text" name="landMark" class="text"
+                                        placeholder="Enter nearest landmark "></td>
+                            </tr>
+                            <tr>
+                                <td><label for="text" style="margin: 10px;">Contact</label></td>
+                                <td><input type="text" name="contact" class="text"
+                                        placeholder="Enter nearest landmark "></td>
+                            </tr>
+                            <tr>
+                                <td><label for="text" style="margin: 10px;">Alternate contact</label></td>
+                                <td><input type="text" name="alternate" class="text"
+                                        placeholder="Enter Alternate contact "></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <hr class="new">
+                <div><br>
+                    <h2 style="color: #2D31FA;">Payment details</h2><br>
+                    <div class="table" id="upi" style="margin-top: 40px;border:2px solid;">
+                        <table style="display: flex;">
+                            <tr>
+                                <th style="display: flex;">
+                                    <input style="margin:10px;font-size: 10px;" type="radio" id="html" name="section" checked>
+                                    <label style="margin: 15px 0px 15px 0px;font-size: 30px;" for="morning">UPI</label>
+                                </th>
+                            </tr>
+                            <div style="display: flex;">
+                                <tr>
+                                    <td><label style="margin: 15px 0px 15px 380px;font-size: 30px;">UPI-Id:</label>
+                                        <input style="margin-left: 290px;" type="text" placeholder="UPIId"></td>
+                                </tr>
+                            </div>
+                        </table>
+                    </div>
+                    <div class="table" id="upi" style="margin-top: 40px;border:2px solid;">
+                        <table style="display: flex;">
+                            <tr>
+                                <th style="display: flex;">
+                                    <input style="margin:10px;font-size: 10px;" type="radio" id="html" name="section">
+                                    <label style="margin: 15px 0px 15px 0px;font-size: 30px;"
+                                        for="afternoon">Credit/Debit Card</label>
+                                </th>
+                            </tr>
+                            <tr>
+                                <div style="display: flex;">
+                            <tr><td style="display: block;">
+                             <label style="margin: 15px 0px 15px 260px;font-size: 30px;">Name of Card Holder</label>
+                              <input type="text" placeholder="Name">
+                            <label style="margin: 15px 110px 15px 260px;font-size: 30px;">Card Number</label>
+                            <input type="text" placeholder="Card Number">
+                            <label style="margin: 15px 100px 15px 260px;font-size: 30px;">Date of Expiry</label>
+                            <input type="text" placeholder="Expiry Date">
+                            <label style="margin: 15px 240px 15px 260px;font-size: 30px;">CVV</label>
+                            <input type="password" placeholder="xxx">
+                        </td>
+                    </tr>
+                    </div>
+                    </table>
+                </div>
+                <div class="table" id="upi" style="margin-top: 40px;border:2px solid;">
+                    <table style="display: flex;">
+                        <tr>
+                            <th style="display: flex;">
+                                <input style="margin:10px;font-size: 10px;" type="radio" id="html" name="section">
+                                <label style="margin: 15px 0px 15px 0px;font-size: 30px;" for="afternoon">Internet Banking</label>
+                            </th>
+                        </tr>
+                        <tr>
+                            <div style="display: flex;">
+                        <tr><td style="display: block;">
+                         <label style="margin: 15px 100px 15px 310px;font-size: 30px;">Name of Bank</label>
+                          <input type="text" placeholder="Name of Bank">
+                        <label style="margin: 15px 60px 15px 310px;font-size: 30px;">Account Number</label>
+                        <input type="text" placeholder="Account Number">
+                        <label style="margin: 15px 150px 15px 310px;font-size: 30px;">IFSC Code</label>
+                        <input type="text" placeholder="IFSC Code">
+                        <label style="margin: 15px 110px 15px 310px;font-size: 30px;">Branch Name</label>
+                        <input type="password" placeholder="Branch Name">
+                    </td>
+                </tr>
+                </div>
+                </table>
+            </div>
+                </div>
+        </form><br>
+        <button class="btn btn-success" type="button" (click)="show1()" style=" font-size:20px;width: 180px; height: 50px;border-radius: 10px;" >Make Payment</button>
+    </div>
+    </div>
+
+</body>

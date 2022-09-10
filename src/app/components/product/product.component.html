@@ -1,0 +1,61 @@
+<aside class="menu-sidebar d-none d-lg-block">
+    <div class="logo">
+        <a href="#">
+          <!--  <img src="assets/images/logo.png" alt="MediCares" class="img-responsive"> -->
+        </a>
+    </div>
+   <!--<div class="menu-sidebar-content js-scrollbar1">
+        <nav class="navbar-sidebar">
+            <ul class="list-unstyled navbar-list"   *ngFor = "let dept of department">
+                <li>
+                    <a routerLink="/dept/{{dept.id}}">{{dept.dname}}</a>
+                </li>
+            </ul>
+        </nav>
+    </div>--> 
+</aside>
+
+<div class="main-content">
+    <div class="section-content section-content-p30">
+        <div class="container-fluid">
+            <button type="button" class="btn btn-info" (click)="addEmpForm()">
+                Add Products</button>
+            <hr>
+             <!-- <a routerLink="/empform" >Add new Employee</a> -->  
+              <table class='table table-bordered'>
+                <thead>
+                    <tr class='table-dark'>
+                        <th>id</th>
+                        <th>name</th>
+                        <th>image</th>
+                        <th>usebefore</th>
+                        <th>quantity</th>
+                        <th>price</th>
+                        <th>pcatid</th>
+                    </tr>
+            
+                </thead>
+              <tbody>
+                <tr  *ngFor="let pro of products">
+                    <td>{{pro.id}}</td>
+                    <td>{{pro.name}}</td>
+                    <td>{{pro.image}}</td>
+                    <td>{{pro.usebefore}}</td>
+                        <td>{{pro.quantity}}</td>
+                        <td>{{pro.price}}</td>
+                        <td>{{pro.pcatid}}</td>
+                    <td>
+                       <button type="button" class="btn btn-info" (click)="updateEmp(pro.id)">
+                            update
+                        </button>
+                        &nbsp;&nbsp;
+                        <button type="button" class="btn btn-info" (click)="deleteEmp(pro.id)">
+                            Delete
+                        </button>
+                    </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
